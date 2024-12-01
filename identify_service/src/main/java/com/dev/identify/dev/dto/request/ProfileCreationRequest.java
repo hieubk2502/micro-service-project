@@ -1,4 +1,4 @@
-package com.dev.profile.dto.request;
+package com.dev.identify.dev.dto.request;
 
 import java.time.LocalDate;
 import lombok.*;

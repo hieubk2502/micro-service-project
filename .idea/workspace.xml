@@ -4,18 +4,143 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="" />
+    <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/request/ProfileCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/response/UserProfileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/mapper/ProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/ApplicationInitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/ApplicationInitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/UserCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/request/UserCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/request/UserCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/application-dev.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/application-local.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/configuration/ApplicationInitConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/configuration/CustomJwtDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/configuration/JwtAuthenticationEntryPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/configuration/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/controller/PermissionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/UserCreateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/ApiResponse$ApiResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/AuthenticationRequest$AuthenticationRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/AuthenticationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/IntrospectRequest$IntrospectRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/IntrospectRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/LogoutRequest$LogoutRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/LogoutRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/PermissionRequest$PermissionRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/PermissionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/RefreshRequest$RefreshRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/RefreshRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/RoleRequest$RoleRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/RoleRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/UserCreateRequest$UserCreateRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/UserCreateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/request/UserUpdateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/AuthenticationResponse$AuthenticationResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/AuthenticationResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/IntrospectResponse$IntrospectResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/IntrospectResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/PermissionResponse$PermissionResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/PermissionResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/RoleResponse$RoleResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/RoleResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/UserResponse$UserResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/dto/response/UserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/InvalidatedToken$InvalidatedTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/InvalidatedToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/Permission$PermissionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/Roles$RolesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/enums/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/exception/AppException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/exception/ErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/PermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/PermissionMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/RoleMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/mapper/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/repository/InvalidatedTokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/repository/PermissionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/service/AuthenticationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/service/PermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/validator/DobConstraint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/classes/com/dev/identify/dev/validator/DobValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/generated-sources/annotations/com/dev/identify/dev/mapper/PermissionMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/generated-sources/annotations/com/dev/identify/dev/mapper/RoleMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/target/generated-sources/annotations/com/dev/identify/dev/mapper/UserMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/ProfileServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/ProfileServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/controller/UserProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/controller/UserProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/request/ProfileCreationRequest$ProfileCreationRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/request/ProfileCreationRequest$ProfileCreationRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/request/ProfileCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/request/ProfileCreationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/response/UserProfileResponse$UserProfileResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/response/UserProfileResponse$UserProfileResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/response/UserProfileResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/dto/response/UserProfileResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/entity/UserProfile$UserProfileBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/entity/UserProfile$UserProfileBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/entity/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/entity/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/mapper/UserProfileMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/mapper/UserProfileMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/mapper/UserProfileMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/mapper/UserProfileMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/repository/UserProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/repository/UserProfileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/service/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/target/classes/com/dev/profile/service/UserProfileService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hieubk2502&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hieubk2502/micro-service-project.git&quot;,
+    &quot;accountId&quot;: &quot;e9cc2fa7-cc59-488f-9f5c-a2597b83e122&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pbB8Ho02mT3j0Mtx4BBLIXNDsm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,10 +148,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Application.executor": "Run",
+    "Application.Application.executor": "Debug",
     "Application.ProfileCreationRequest.executor": "Debug",
-    "Application.ProfileServiceApplication.executor": "Run",
+    "Application.ProfileServiceApplication.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/hieu/microservice_project/profile_service",
     "project.structure.last.edited": "Global Libraries",
@@ -38,8 +166,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/profile_service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dev.identify.dev.dto.response" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ProfileServiceApplication">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dev.identify.dev.Application" />
       <module name="identify_service" />
@@ -53,27 +184,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileCreationRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dev.profile.dto.request.ProfileCreationRequest" />
-      <module name="profile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dev.profile.dto.request.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProfileServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.dev.profile.ProfileServiceApplication" />
-      <module name="profile" />
+      <module name="profile_service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dev.profile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,9 +211,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProfileServiceApplication" />
-        <item itemvalue="Application.ProfileCreationRequest" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.ProfileServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -110,6 +239,16 @@
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java</url>
           <line>19</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

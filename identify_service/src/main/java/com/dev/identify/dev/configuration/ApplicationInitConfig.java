@@ -92,9 +92,6 @@ public class ApplicationInitConfig {
 
                 User userAdmin = User
                         .builder()
-                        .firstname("Tran")
-                        .lastname("Hieu")
-                        .dob(LocalDate.of(2000, 02, 25))
                         .username(ADMIN_USER_NAME)
                         .password(passwordEncoder.encode(ADMIN_PASSWORD))
                         .roles(roleAdmin)

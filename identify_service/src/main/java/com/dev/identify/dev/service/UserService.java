@@ -1,16 +1,20 @@
 package com.dev.identify.dev.service;
 
+import com.dev.identify.dev.dto.request.ProfileCreationRequest;
 import com.dev.identify.dev.dto.request.UserCreateRequest;
 import com.dev.identify.dev.dto.request.UserUpdateRequest;
+import com.dev.identify.dev.dto.response.UserProfileResponse;
 import com.dev.identify.dev.dto.response.UserResponse;
 import com.dev.identify.dev.entity.Roles;
 import com.dev.identify.dev.entity.User;
 import com.dev.identify.dev.enums.Role;
 import com.dev.identify.dev.exception.AppException;
 import com.dev.identify.dev.exception.ErrorCode;
+import com.dev.identify.dev.mapper.ProfileMapper;
 import com.dev.identify.dev.mapper.UserMapper;
 import com.dev.identify.dev.repository.RoleRepository;
 import com.dev.identify.dev.repository.UserRepository;
+import com.dev.identify.dev.repository.httpclient.ProfileClient;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -35,7 +39,11 @@ public class UserService {
 
     UserMapper userMapper;
 
+    ProfileMapper profileMapper;
+
     RoleRepository roleRepository;
+
+    ProfileClient profileClient;
 
     PasswordEncoder passwordEncoder;
 
@@ -53,9 +61,18 @@ public class UserService {
 
         roleRepository.findById(Role.USER.name()).ifPresent(roleSet::add);
         user.setRoles(roleSet);
+
         // Problem concurrent request
         try {
-            return userMapper.toUserResponse(userRepository.save(user));
+            user = userRepository.save(user);
+
+            ProfileCreationRequest profileCreationRequest = profileMapper.toProfileCreationRequest(request);
+
+            profileCreationRequest.setUserId(user.getId());
+
+            UserProfileResponse userProfileResponse = profileClient.create(profileCreationRequest);
+            log.info("Response from profile-service: {}", userProfileResponse);
+            return userMapper.toUserResponse(user);
         } catch (DataIntegrityViolationException ex) {
             throw new AppException(ErrorCode.USER_EXISTED);
         }
