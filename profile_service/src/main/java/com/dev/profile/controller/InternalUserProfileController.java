@@ -1,7 +1,7 @@
 package com.dev.profile.controller;
 
 import com.dev.profile.dto.request.ProfileCreationRequest;
-import com.dev.profile.dto.response.UserProfileResponse;
+import com.dev.profile.dto.response.ProfileCreationResponse;
 import com.dev.profile.service.UserProfileService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +16,7 @@ public class InternalUserProfileController {
     UserProfileService userProfileService;
 
     @PostMapping("/users")
-    UserProfileResponse createProfile(@RequestBody ProfileCreationRequest request) {
+    ProfileCreationResponse createProfile(@RequestBody ProfileCreationRequest request) {
         return userProfileService.createProfile(request);
     }
 }

@@ -1,6 +1,6 @@
 package com.dev.identify.dev.controller;
 
-import com.dev.identify.dev.dto.request.ApiResponse;
+import com.dev.identify.dev.dto.ApiResponse;
 import com.dev.identify.dev.dto.request.UserCreateRequest;
 import com.dev.identify.dev.dto.request.UserUpdateRequest;
 import com.dev.identify.dev.dto.response.UserResponse;
@@ -25,7 +25,7 @@ public class UserController {
 
     UserService userService;
 
-    @PostMapping
+    @PostMapping("/registration")
     public ApiResponse<UserResponse> createUser(@RequestBody @Valid UserCreateRequest request) {
 
         return ApiResponse.<UserResponse>builder()

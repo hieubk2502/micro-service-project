@@ -1,4 +1,4 @@
-package com.dev.identify.dev.dto.request;
+package api.gateway.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AccessLevel;

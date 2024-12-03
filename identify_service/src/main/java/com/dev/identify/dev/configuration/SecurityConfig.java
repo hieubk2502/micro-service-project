@@ -18,13 +18,15 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+import java.util.Arrays;
+
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
 
-    private final String[] PUBLIC_ENDPOINTS = {
+    private static final String[] PUBLIC_ENDPOINTS = {
             "/users",
             "/auth/token",
             "/auth/introspect",
@@ -43,13 +45,13 @@ public class SecurityConfig {
 
         httpSecurity.authorizeHttpRequests(request ->
                 request.requestMatchers(HttpMethod.POST, PUBLIC_ENDPOINTS).permitAll()
-                        .anyRequest().authenticated());
+                        .anyRequest().authenticated())
 
         // decode chuoi jwt truyen vao
         // khi config oauth2ResourceServer se dang ki 1 cai provideManager de support jwtToken
         // khi want to validation jwt do can define 1 jwtDecoder
-        httpSecurity.oauth2ResourceServer(oauth2 ->
-                oauth2.jwt(jwtConfigurer -> jwtConfigurer.decoder(customJwtDecoder)
+                .oauth2ResourceServer(oauth2 ->
+                    oauth2.jwt(jwtConfigurer -> jwtConfigurer.decoder(customJwtDecoder)
                                 .jwtAuthenticationConverter(jwtAuthenticationConverter()))
                         // config when authen failed
                         .authenticationEntryPoint(new JwtAuthenticationEntryPoint())
@@ -64,7 +66,8 @@ public class SecurityConfig {
     public CorsFilter corsFilter(){
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 
-        corsConfiguration.addAllowedOrigin("http://localhost:8080");
+//        corsConfiguration.addAllowedOrigin("http://localhost:8080");
+        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:8080","http://localhost:8888"));
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
 

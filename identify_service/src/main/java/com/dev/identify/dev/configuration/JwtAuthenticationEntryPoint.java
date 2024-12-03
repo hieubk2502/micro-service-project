@@ -1,6 +1,6 @@
 package com.dev.identify.dev.configuration;
 
-import com.dev.identify.dev.dto.request.ApiResponse;
+import com.dev.identify.dev.dto.ApiResponse;
 import com.dev.identify.dev.exception.ErrorCode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
