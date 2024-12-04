@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "15571e54-05ad-40a3-832c-8b1b564d301b",
+		"name": "profile-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26428519"
+	},
+	"item": [
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/profile/users",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"profile",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/profile/users",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"profile",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create profile user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"tran2\",\n    \"lastname\": \"hieu\",\n    \"dob\": \"2002-04-04\",\n    \"city\": \"Ha Nam\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/profile/internal/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"profile",
+						"internal",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create profile gateway",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=5870EFB828F977B926A944EAB338781E"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"tran2\",\n    \"firstName\": \"tran2\",\n    \"lastName\": \"hieu\",\n    \"dob\": \"2002-04-04\",\n    \"city\": \"Ha Nam\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/profile/internal/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"profile",
+						"internal",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
