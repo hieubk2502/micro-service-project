@@ -5,30 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/configuration/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/configuration/WebClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/dto/request/IntrospectRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/dto/response/IntrospectResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/repository/IdentityClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/service/IdentityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/AuthenticationRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/request/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/test/java/com/dev/identify/dev/controller/UserControllerWithTestContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/test/java/com/dev/identify/dev/controller/UserControllerWithTestContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +64,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.ApiGatewayApplication.executor": "Debug",
-    "Application.Application.executor": "Debug",
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.Application.executor": "Run",
     "Application.ProfileCreationRequest.executor": "Debug",
     "Application.ProfileServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -92,11 +84,11 @@
       <recent name="$PROJECT_DIR$/profile_service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dev.profile.exception" />
       <recent name="api.gateway.dto" />
       <recent name="api.gateway.dto.response" />
       <recent name="api.gateway.dto.request" />
       <recent name="com.dev.profile.controller" />
-      <recent name="com.dev.identify.dev.dto.response" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -165,8 +157,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProfileServiceApplication" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.ProfileServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
@@ -187,17 +179,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java</url>
-          <line>19</line>
+          <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java</url>
-          <line>19</line>
+          <line>22</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/service/UserProfileService.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -244,6 +236,16 @@
           <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java</url>
           <line>64</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/service/UserProfileService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

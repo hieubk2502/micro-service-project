@@ -31,7 +31,8 @@ public class SecurityConfig {
             "/auth/token",
             "/auth/introspect",
             "/auth/logout",
-            "/auth/refreshtoken"
+            "/auth/refreshtoken",
+            "/users/registration"
     };
 
     @NonFinal
@@ -66,8 +67,8 @@ public class SecurityConfig {
     public CorsFilter corsFilter(){
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 
-//        corsConfiguration.addAllowedOrigin("http://localhost:8080");
-        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:8080","http://localhost:8888"));
+        corsConfiguration.addAllowedOrigin("http://localhost:8080");
+//        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:8080","http://localhost:8888"));
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
 
