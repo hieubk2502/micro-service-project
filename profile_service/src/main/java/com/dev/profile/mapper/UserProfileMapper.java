@@ -1,7 +1,7 @@
 package com.dev.profile.mapper;
 
 import com.dev.profile.dto.request.ProfileCreationRequest;
-import com.dev.profile.dto.response.UserProfileResponse;
+import com.dev.profile.dto.response.ProfileCreationResponse;
 import com.dev.profile.entity.UserProfile;
 import org.mapstruct.Mapper;
 
@@ -9,5 +9,5 @@ import org.mapstruct.Mapper;
 public interface UserProfileMapper {
     UserProfile toUserProfile(ProfileCreationRequest request);
 
-    UserProfileResponse toUserProfileResponse(UserProfile entity);
+    ProfileCreationResponse toUserProfileResponse(UserProfile entity);
 }

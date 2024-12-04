@@ -1,8 +1,9 @@
 package com.dev.profile.dto.request;
 
-import java.time.LocalDate;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter

@@ -1,6 +1,6 @@
 package com.dev.identify.dev.exception;
 
-import com.dev.identify.dev.dto.request.ApiResponse;
+import com.dev.identify.dev.dto.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;

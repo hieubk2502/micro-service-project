@@ -1,7 +1,7 @@
-package com.dev.identify.dev.configuration;
+package com.dev.profile.configuration;
 
-import com.dev.identify.dev.dto.ApiResponse;
-import com.dev.identify.dev.exception.ErrorCode;
+import com.dev.profile.dto.ApiResponse;
+import com.dev.profile.exception.ErrorCode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,13 +14,12 @@ import java.io.IOException;
 
 public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
-    // setup when authentication fail
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
 
         ErrorCode errorCode = ErrorCode.UNAUTHENTICATED;
 
-        response.setStatus(errorCode.getStatus().value());
+        response.setStatus(errorCode.getStatusCode().value());
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 
         ApiResponse<?> apiResponse = ApiResponse

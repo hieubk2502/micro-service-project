@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/AuthenticationRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/response/UserProfileResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/response/UserProfileResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/dto/response/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -63,11 +67,11 @@
     "Application.ApiGatewayApplication.executor": "Run",
     "Application.Application.executor": "Run",
     "Application.ProfileCreationRequest.executor": "Debug",
-    "Application.ProfileServiceApplication.executor": "Debug",
+    "Application.ProfileServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "setup-api-gateway",
+    "git-widget-placeholder": "config-authen-api-gateway",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/hieu/microservice_project/profile_service",
     "project.structure.last.edited": "Modules",
@@ -80,8 +84,11 @@
       <recent name="$PROJECT_DIR$/profile_service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dev.profile.exception" />
+      <recent name="api.gateway.dto" />
+      <recent name="api.gateway.dto.response" />
+      <recent name="api.gateway.dto.request" />
       <recent name="com.dev.profile.controller" />
-      <recent name="com.dev.identify.dev.dto.response" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,11 +150,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.ProfileServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.ProfileServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -167,28 +179,73 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java</url>
-          <line>19</line>
+          <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java</url>
-          <line>19</line>
+          <line>22</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/service/UserProfileService.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/JwtAuthenticationEntryPoint.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/configuration/AuthenticationFilter.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/configuration/AuthenticationFilter.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/controller/UserController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/service/UserProfileService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

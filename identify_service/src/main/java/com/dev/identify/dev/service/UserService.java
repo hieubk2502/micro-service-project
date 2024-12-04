@@ -20,11 +20,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpHeaders;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.servlet.mvc.condition.RequestConditionHolder;
 
 import java.util.HashSet;
 import java.util.List;
@@ -69,6 +73,12 @@ public class UserService {
             ProfileCreationRequest profileCreationRequest = profileMapper.toProfileCreationRequest(request);
 
             profileCreationRequest.setUserId(user.getId());
+
+//            ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+//            var authHeader = servletRequestAttributes.getRequest().getHeader(HttpHeaders.AUTHORIZATION);
+//
+//            log.info("Header: {}", authHeader);
+
 
             UserProfileResponse userProfileResponse = profileClient.create(profileCreationRequest);
             log.info("Response from profile-service: {}", userProfileResponse);

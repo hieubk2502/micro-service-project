@@ -1,6 +1,6 @@
 package com.dev.identify.dev.controller;
 
-import com.dev.identify.dev.dto.request.ApiResponse;
+import com.dev.identify.dev.dto.ApiResponse;
 import com.dev.identify.dev.dto.request.PermissionRequest;
 import com.dev.identify.dev.dto.response.PermissionResponse;
 import com.dev.identify.dev.service.PermissionService;
