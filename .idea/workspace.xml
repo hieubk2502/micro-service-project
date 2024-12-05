@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/AuthenticationRequestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/repository/httpclient/ProfileClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/InternalUserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/controller/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/request/ProfileCreationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/dto/response/ProfileCreationResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +55,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.ApiGatewayApplication.executor": "Debug",
     "Application.Application.executor": "Run",
+    "Application.IdentityServiceApplication.executor": "Run",
+    "Application.NotificationServiceApplication.executor": "Debug",
     "Application.ProfileCreationRequest.executor": "Debug",
     "Application.ProfileServiceApplication.executor": "Run",
+    "Application.com.dev.notification.NotificationServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "config-authen-api-gateway",
+    "git-widget-placeholder": "notification-service",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/hieu/microservice_project/profile_service",
+    "last_opened_file_path": "/home/hieu/Downloads/micro-service-project/notification-service/src/main/java/com/dev/notification",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -81,6 +75,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification" />
       <recent name="$PROJECT_DIR$/profile_service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -98,7 +93,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.NotificationServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -112,12 +107,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dev.identify.dev.Application" />
+    <configuration name="IdentityServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dev.identify.dev.IdentityServiceApplication" />
       <module name="identify_service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dev.identify.dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dev.notification.NotificationServiceApplication" />
+      <module name="notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.notification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,15 +159,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.NotificationServiceApplication" />
       <item itemvalue="Application.ApiGatewayApplication" />
-      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.IdentityServiceApplication" />
       <item itemvalue="Application.ProfileServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.ProfileServiceApplication" />
+        <item itemvalue="Application.IdentityServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.ProfileServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -228,11 +238,6 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api-gateway/src/main/java/api/gateway/configuration/AuthenticationFilter.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/configuration/CustomJwtDecoder.java</url>
           <line>64</line>
           <option name="timeStamp" value="28" />
@@ -246,6 +251,16 @@
           <url>file://$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/service/UserProfileService.java</url>
           <line>36</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/JwtAuthenticationEntryPoint.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
