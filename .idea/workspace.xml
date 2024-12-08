@@ -5,13 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/EmailRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/RecipientDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/SendEmailRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/response/EmailResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/repository/httpclient/EmailClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/CustomJwtDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/NotificationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +59,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -55,13 +71,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.ApiGatewayApplication.executor": "Debug",
+    "Application.ApiGatewayApplication.executor": "Run",
     "Application.Application.executor": "Run",
-    "Application.IdentityServiceApplication.executor": "Run",
-    "Application.NotificationServiceApplication.executor": "Debug",
+    "Application.IdentityServiceApplication.executor": "Debug",
+    "Application.NotificationServiceApplication.executor": "Run",
     "Application.ProfileCreationRequest.executor": "Debug",
-    "Application.ProfileServiceApplication.executor": "Run",
+    "Application.ProfileServiceApplication.executor": "Debug",
     "Application.com.dev.notification.NotificationServiceApplication.executor": "Run",
+    "Maven.identify_service [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -70,7 +87,8 @@
     "last_opened_file_path": "/home/hieu/Downloads/micro-service-project/notification-service/src/main/java/com/dev/notification",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -166,10 +184,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProfileServiceApplication" />
         <item itemvalue="Application.IdentityServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.NotificationServiceApplication" />
-        <item itemvalue="Application.ProfileServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -258,9 +276,39 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/ErrorCode.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/service/EmailService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="46" />
+          <line>24</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

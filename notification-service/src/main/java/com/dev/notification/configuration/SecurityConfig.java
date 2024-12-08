@@ -22,7 +22,7 @@ public class SecurityConfig {
     private CustomJwtDecoder customJwtDecoder;
 
     private final String[] PUBLIC_ENDPOINTS = {
-//            "/internal/users"
+            "/create-email"
     };
 
     @Bean
