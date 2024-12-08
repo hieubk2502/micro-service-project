@@ -1,4 +1,4 @@
-package com.dev.profile.configuration;
+package com.dev.notification.configuration;
 
 import com.nimbusds.jwt.SignedJWT;
 import org.springframework.security.oauth2.jwt.Jwt;
@@ -16,6 +16,7 @@ public class CustomJwtDecoder implements JwtDecoder {
 
         try {
             SignedJWT signedJWT = SignedJWT.parse(token);
+
             return new Jwt(token,
                     signedJWT.getJWTClaimsSet().getIssueTime().toInstant(),
                     signedJWT.getJWTClaimsSet().getExpirationTime().toInstant(),
@@ -25,6 +26,5 @@ public class CustomJwtDecoder implements JwtDecoder {
         } catch (ParseException e) {
             throw new JwtException("Invalid!");
         }
-
     }
 }

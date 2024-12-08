@@ -20,15 +20,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.http.HttpHeaders;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.servlet.mvc.condition.RequestConditionHolder;
 
 import java.util.HashSet;
 import java.util.List;
@@ -48,6 +45,8 @@ public class UserService {
     RoleRepository roleRepository;
 
     ProfileClient profileClient;
+
+    KafkaTemplate<String, String> kafkaTemplate;
 
     PasswordEncoder passwordEncoder;
 
@@ -82,6 +81,11 @@ public class UserService {
 
             UserProfileResponse userProfileResponse = profileClient.create(profileCreationRequest);
             log.info("Response from profile-service: {}", userProfileResponse);
+
+            // Publish message to kafka
+
+            kafkaTemplate.send("notification-email", "Welcome new member " + user.getUsername());
+
             return userMapper.toUserResponse(user);
         } catch (DataIntegrityViolationException ex) {
             throw new AppException(ErrorCode.USER_EXISTED);

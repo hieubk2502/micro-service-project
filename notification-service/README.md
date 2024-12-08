@@ -1,0 +1,3 @@
+- `docker pull bitnami/mongodb:7.0`
+- `docker run -d --name mongodb -p 27017:27017 -e MONGODB_ROOT_USER=root -e MONGODB_ROOT_PASSWORD=root bitnami/mongodb:7.0`
+- 

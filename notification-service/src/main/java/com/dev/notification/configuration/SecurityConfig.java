@@ -1,4 +1,4 @@
-package com.dev.profile.configuration;
+package com.dev.notification.configuration;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,22 +22,25 @@ public class SecurityConfig {
     private CustomJwtDecoder customJwtDecoder;
 
     private final String[] PUBLIC_ENDPOINTS = {
-            "/internal/users"
+            "/create-email"
     };
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeHttpRequests(
-                request ->
-                        request.requestMatchers(HttpMethod.POST, PUBLIC_ENDPOINTS)
-                                .permitAll()
-                                .anyRequest()
-                                .authenticated());
+                request -> request.requestMatchers(HttpMethod.POST, PUBLIC_ENDPOINTS)
+                        .permitAll()
+                        .anyRequest()
+                        .authenticated());
 
-        httpSecurity.oauth2ResourceServer(oauth2 -> oauth2.jwt(jwtConfigurer -> jwtConfigurer
-                        .decoder(customJwtDecoder)
-                        .jwtAuthenticationConverter(jwtAuthenticationConverter()))
-                .authenticationEntryPoint(new JwtAuthenticationEntryPoint()));
+        httpSecurity
+                .oauth2ResourceServer(
+                        auth2 -> auth2
+                                .jwt(jwtConfigurer -> jwtConfigurer
+                                        .decoder(customJwtDecoder)
+                                        .jwtAuthenticationConverter(jwtAuthenticationConverter()))
+                                .authenticationEntryPoint(new JwtAuthenticationEntryPoint()));
+
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
 
         return httpSecurity.build();
@@ -53,5 +56,4 @@ public class SecurityConfig {
 
         return jwtAuthenticationConverter;
     }
-
 }
