@@ -21,7 +21,7 @@ public class EmailService {
     EmailClient emailClient;
 
     @NonFinal
-    String apiKey = "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";
+    String apiKey = "your-key-gen";
 
     public EmailResponse sendEmail( SendEmailRequest requestDTO) {
 

@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/EmailRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/RecipientDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/SendEmailRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/request/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/response/EmailResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/repository/httpclient/EmailClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/java/com/dev/identify/dev/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/identify_service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/NotificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/controller/EmailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/dto/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/dev/notification/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile_service/src/main/java/com/dev/profile/configuration/SecurityConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8dd12d3-651d-4b13-b88b-6bedc8ddd52b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
