@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "3510d441-7aa1-44c6-8838-67797638e045",
+		"name": "Notification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26428519"
+	},
+	"item": [
+		{
+			"name": "notification gate way",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXYuY29tIiwic3ViIjoiYWRtaW4iLCJleHAiOjE3MzM0MjUzNDYsImlhdCI6MTczMzQxOTM0NiwianRpIjoiYjY5ZTM5YTgtYzYwMy00OTI5LTgwOWEtNWY5MTk3NTc3NjMxIiwic2NvcGUiOiJST0xFX0FETUlOIFJFSkVDVC1EQVRBIFdSSVRFLURBVEEgUkVBRC1EQVRBIn0.OULi7_T_yooTygxJYdCnIjtwOT5zskusXlvkEVJD5yYjxOzg3jomVtxnXpA_WoM6R5xW6q2v8g5OAcAz31npXg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/api/v1/notification/create",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notification",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/notification",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendEmail",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
